@@ -36,7 +36,7 @@ class CustomPointerCircle extends CustomPainter {
   }
 }
 ```
-!<img src="https://github.com/rowjoy/flutter_custom_paint/assets/69602585/87579a64-277d-40c9-ac03-c5ccbabc43a4" width="100" height="100">
+<img src="https://github.com/rowjoy/flutter_custom_paint/assets/69602585/87579a64-277d-40c9-ac03-c5ccbabc43a4" width="500" height="300">
 
 
 
