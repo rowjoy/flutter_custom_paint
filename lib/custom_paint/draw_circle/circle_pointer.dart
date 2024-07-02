@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_local_variable, unnecessary_new
 
 import 'package:flutter/material.dart';
 
@@ -11,6 +11,9 @@ class CustomPointerCircle extends CustomPainter {
     linepaint.color = Color.fromARGB(77, 100, 57,0);
     circlePaint.color = Colors.red;
 
+
+  
+    
     circlePaint.style = PaintingStyle.stroke;
     circlePaint.strokeWidth = 22;
     canvas.drawLine(Offset(0,-20), Offset(0, size.height + 300), linepaint);

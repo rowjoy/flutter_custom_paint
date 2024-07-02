@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_paint/custom_paint/draw_circle/draw_circle.dart';
+import 'package:flutter_custom_paint/custom_paint/draw_rect/rect_shape.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: CustomPointerShape()
-      home: DrowCircleCanves(),
+      // home: DrowCircleCanves(),
+       home:  DrawRectShape(),
     );
   }
 }
