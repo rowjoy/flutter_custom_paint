@@ -19,7 +19,7 @@ class _CustomPointerShapeState extends State<CustomPointerShape> {
       do {
         i++;
         strokeWidth = double.parse(i.toString());
-      } while (i < 10000000000);
+      } while (i < 100);
     });
   }
 
