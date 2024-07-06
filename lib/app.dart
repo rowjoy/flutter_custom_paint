@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'custom_paint/draw_images/draw_images.dart';
+import 'custom_paint/buttom_navigation/buttom_navigation_ber.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       // home: CustomPointerShape()
       // home: DrowCircleCanves(),
       // home:  DrawRectShape(),
-      home: DrawImages(),
+      // home: DrawImages(),
+      home: BottomNavigationBer(),
     );
   }
 }
