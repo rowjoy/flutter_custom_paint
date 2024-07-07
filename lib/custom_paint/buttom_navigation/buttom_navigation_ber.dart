@@ -10,12 +10,27 @@ class BottomNavigationBer extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Colors.black,
       body: Stack (
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: size.height,
+              width: size.width,
+              child: Column(
+                children: [
+                 Container(height: 30,width: size.width,color: Colors.white70,),
+            
+                ],
+              ),
+            ),
+          ),
           Positioned(
             bottom: 0,
             left: 0,
+            right: 0,
             child: Container(
               width: size.width,
               height: 80,

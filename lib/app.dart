@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-
-import 'custom_paint/buttom_navigation/buttom_navigation_ber.dart';
+import 'package:flutter_custom_paint/custom_paint/plot_points/plot_points.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,7 +18,8 @@ class MyApp extends StatelessWidget {
       // home: DrowCircleCanves(),
       // home:  DrawRectShape(),
       // home: DrawImages(),
-      home: BottomNavigationBer(),
+      //home: BottomNavigationBer(),
+      home: PlotCustomPoint(),
     );
   }
 }
