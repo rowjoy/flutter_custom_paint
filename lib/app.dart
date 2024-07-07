@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_paint/custom_paint/plot_points/plot_points.dart';
+
+import 'custom_paint/show_text_custompoint/pragrap_custom_point.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       // home:  DrawRectShape(),
       // home: DrawImages(),
       //home: BottomNavigationBer(),
-      home: PlotCustomPoint(),
+      // home: PlotCustomPoint(),
+      home: PragrapCustomPoint(),
     );
   }
 }
