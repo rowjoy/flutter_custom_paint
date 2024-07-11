@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'custom_paint/show_text_custompoint/pragrap_custom_point.dart';
+import 'custom_paint/horizontal_calendar/horizontal_calendar_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
       // home: DrawImages(),
       //home: BottomNavigationBer(),
       // home: PlotCustomPoint(),
-      home: PragrapCustomPoint(),
+      //home: PragrapCustomPoint(),
+       home: HorizontalCalendar(),
     );
   }
 }
