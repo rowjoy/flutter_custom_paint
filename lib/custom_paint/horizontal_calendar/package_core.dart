@@ -127,7 +127,8 @@ class PackageCore extends CorePlus {
 }
 
 
-class CardContentView {
+// CardContentView  class  design proparty manage 
+ class CardContentView {
   final Color? titletextActiveColor;
   final Color? titletextUnActiveColor;
   final Color? subTitletextActiveColor;
