@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_paint/custom_paint/horizontal_calendar/calenter_enam.dart';
 import 'package:flutter_custom_paint/custom_paint/horizontal_calendar/package_core.dart';
 
-class HorizontalCalendarPlus extends StatelessWidget {
+class HorizontalCalendarPlus  extends StatelessWidget  {
   final ValueNotifier<DateTime> _currentDateNotifier;
   final EdgeInsetsGeometry padding;
   final int? totaldateCount;
@@ -56,6 +56,8 @@ class HorizontalCalendarPlus extends StatelessWidget {
 
   }) :  _currentDateNotifier = currentDateNotifier;
 
+
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<DateTime>(
@@ -89,7 +91,7 @@ class HorizontalCalendarPlus extends StatelessWidget {
                        side: boxBorderside == null ? BorderSide.none :  boxBorderside!(context, currentDateTime, index),
                        borderRadius: boxborderRadius!,
                     ),
-                    child: CardContent(isCurrentDate: isCurrentDate, packageCore: packageCore, calenderLabelformate: calenderLabelformate, calenderSubTitleformate: calenderSubTitleformate,cardViewDesign: cardViewDesign,),
+                     child: _CardContent(isCurrentDate: isCurrentDate, packageCore: packageCore, calenderLabelformate: calenderLabelformate, calenderSubTitleformate: calenderSubTitleformate,cardViewDesign: cardViewDesign,),
                   );
                 }else{
                    return customWidgetbuilder!(context, currentDateTime, index);
@@ -120,9 +122,9 @@ class HorizontalCalendarPlus extends StatelessWidget {
 
 }
 
-class CardContent extends StatelessWidget {
+  class _CardContent extends StatelessWidget {
 
-  const CardContent({
+  const _CardContent({
     super.key,
      this.isCurrentDate,
      this.packageCore,

@@ -29,6 +29,7 @@ class _HorizontalCalendarState extends State<HorizontalCalendar> {
       body: SafeArea(
         child: Column(
           children: [
+          
             HorizontalCalendarPlus(
               currentDateNotifier: _currentDateNotifier, 
               padding: EdgeInsets.only(top: 15,left: 8,right: 8),
