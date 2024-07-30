@@ -10,6 +10,15 @@ class Generics<T> {
 }
 
 
+// multipal Generics 
+class MyGenericClass<T, U> {
+  T firstValue;
+  U secondValue;
+
+  MyGenericClass(this.firstValue, this.secondValue);
+}
+
+
 
 // 2. Generics: 
 
@@ -28,6 +37,23 @@ class Person {
 }
 
 
+
+
+
+
+abstract class Animal {
+  void makeSound();
+}
+
+
+class Dog extends Animal {
+  @override
+  void makeSound() {
+     print("Woof");
+  }
+
+}
+
 void main (){
   var genericsString = Generics(value: "Jamirul islam");
   var genericsInt = Generics(value: 878);
@@ -40,6 +66,10 @@ void main (){
 
   var p = Person();
   p.name = "Md. Kamal";
+
+
+  final mydog = Dog();
+  mydog.makeSound();
 
   
 
