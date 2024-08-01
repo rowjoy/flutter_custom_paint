@@ -3,9 +3,6 @@
 class Ref {
   Ref();
 
-  // Creator which hold state.
-  final Set<Creator> _creators = {};
-
   // Dependency graph. Think this as a directional graph
   /// A -> [B C] means if A changes , B and C need change too
   final Map <Creator, Set<Creator>> _graph = {};
@@ -44,19 +41,16 @@ class Ref {
      }
   }
 
-
-
-
 }
 
 
 
 
 /// Creator creates a stream of T.
-class Creator<T> {
-   const Creator(this.create);
-   final T Function(Ref ref, Creator<T> self) create;
-   Element<T> _createElement (Ref ref) => Element<T>(ref, this);
+class Creator<X> {
+   const Creator(this.create); // Pramitter 
+   final X Function(Ref ref, Creator<X> self) create; // pramitter 
+   Element<X> _createElement (Ref ref) => Element<X>(ref, this); // Finction 
 
 }
 
